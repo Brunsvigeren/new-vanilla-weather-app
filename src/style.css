@@ -1,0 +1,158 @@
+.container {
+  font-family: "Raleway", sans-serif;
+  margin-top: 20px;
+  display: block;
+  text-align: center;
+}
+
+.card {
+  max-width: 500px;
+  display: block;
+  margin: 30px auto;
+  height: auto;
+}
+
+.card-body {
+  background: radial-gradient(
+    circle at 0.2% 0.5%,
+    rgb(252, 165, 241) 0%,
+    rgb(181, 255, 255) 100.2%
+  );
+  border: 1px solid rgb(153, 103, 177);
+  border-radius: 15px;
+}
+
+.form-control {
+  font-family: "Raleway", sans-serif;
+  margin-top: 20px;
+  font-size: 18px;
+  box-shadow: 2px 2px 6px rgba(233, 147, 236, 0.7);
+}
+
+.submit-button,
+#current-button {
+  font-family: "Raleway", sans-serif;
+  background-color: rgba(233, 147, 236, 0.7);
+  margin-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 0.25rem;
+  border: none;
+  height: 38px;
+  font-size: 18px;
+  color: white;
+  transition: 200ms ease-in-out;
+  box-shadow: 2px 2px 6px rgba(233, 147, 236, 0.7);
+}
+
+.submit-button:hover,
+#current-button:hover {
+  box-shadow: 2px 2px 6px rgba(29, 26, 29, 0.7);
+}
+
+#current-city {
+  font-size: 60px;
+  font-weight: 400;
+  color: rgba(143, 10, 148, 0.7);
+  margin-bottom: -5px;
+  margin-top: 25px;
+}
+
+#date-and-time {
+  font-size: 15px;
+  color: rgba(180, 155, 184, 0.8);
+}
+
+#temp {
+  margin-top: -25px;
+  margin-bottom: -25px;
+}
+
+.current-temperature #temp {
+  font-family: "Khand", sans-serif;
+  font-size: 320px;
+  font-weight: 300;
+  color: rgb(109, 105, 114);
+}
+
+#description {
+  text-align: center;
+  font-size: 24px;
+  font-style: italic;
+  padding-top: 35px;
+  margin-top: -20px;
+  margin-bottom: -10px;
+  color: rgba(143, 10, 148, 0.4);
+}
+
+.description-and-icon:first-letter {
+  text-transform: capitalize;
+}
+
+.temp-scale p {
+  color: rgb(109, 105, 114);
+  font-size: 40px;
+}
+
+#c {
+  color: rgb(109, 105, 114);
+  cursor: default;
+  transition: 150ms ease-in-out;
+  text-decoration: none;
+  font-size: 40px;
+}
+
+#f {
+  cursor: default;
+  transition: 150ms ease-in-out;
+  text-decoration: none;
+  color: rgb(109, 105, 114);
+  font-size: 40px;
+}
+
+#c:hover {
+  font-weight: bold;
+  cursor: default;
+}
+
+#f:hover {
+  font-weight: bold;
+  cursor: default;
+}
+
+.temp-scale .active {
+  color: rgba(198, 49, 218, 0.6);
+}
+
+.icon-little {
+  font-size: 35px;
+  color: rgba(198, 49, 218, 0.6);
+  transition: 200ms ease-in-out;
+}
+
+.icon-little p {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(198, 49, 218, 0.8);
+}
+
+.icon-little:hover {
+  background-color: rgba(233, 147, 236, 0.3);
+  border-radius: 8px;
+  cursor: default;
+}
+
+#wind-and-humidity {
+  color: rgba(198, 49, 218, 0.6);
+}
+
+#forecast {
+  border-top: 1px dotted rgba(198, 49, 218, 0.6);
+  padding-top: 20px;
+}
+
+footer {
+  margin-top: -20px;
+  margin-bottom: 30px;
+  text-align: center;
+}

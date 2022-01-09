@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&family=Roboto+Slab:wght@100;200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500&display=swap" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/632402158e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card border-0">
+        <div class="card-body">
+          <div class = "buttons-top">
+          <form id="search-form">
+            <div class="row justify-content-center g-2 mb-3">
+              <div class="col-auto">
+                <input
+                  type="search"
+                  class="form-control"
+                  placeholder="Enter city"
+                  id="city-input"
+                  autocomplete="off";
+                />
+              </div>
+              <div class="col-auto">
+                <input type="submit" class="submit-button" value="Search" />       
+          </form>
+              <button type="button" id="current-button">Current</button>
+              </div>
+          </div>
+
+          <div class="row justify-content-sm-center">
+            <div class="col-sm-auto">
+              <h2 id="current-city">Copenhagen</h2>
+            </div>
+            
+            <div class="description-and-icon">
+            <h4 id="description">Cloudy</h4>
+            <img id="main-icon" src=""/>
+            </div>  
+          </div>
+
+          <div class="current-temperature">
+            <h1 id="temp">3</h1>
+          </div>
+
+          <div class="row" id="wind-and-humidity">
+            <div class="col-sm">
+              <div class="wind">
+                <h6>Wind:</h6>
+                <p><span id="wind-speed">8</span> km/h</p>
+              </div>
+            </div>
+            <div class="col-sm" class="temp-scale">
+              <p><span>
+                <a href="#" id="c" class="active">°C</a> 
+                |
+                <a href="#" id="f"> °F</a></span></p>
+            </div>
+
+            <div class="col-sm">
+              <div class="humidity-detail">
+                <h6>Humidity:</h6>
+                <p><span id="humidity">20</span>%</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row" id="forecast">
+            <div class="col-sm">
+              <div class="icon-little">
+                <i class="fas fa-sun"></i>
+                <h6>Saturday</h6>
+                <p>3° | 1°</p>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="icon-little">
+                <i class="fas fa-cloud-rain"></i>
+                <h6>Sunday</h6>
+                <p>2° | 1°</p>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="icon-little">
+                <i class="fas fa-cloud-sun"></i>
+                <h6 class="day">Monday</h6>
+                <p>0° | -1°</p>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="icon-little">
+                <i class="fas fa-sun"></i>
+                <h6>Tuesday</h6>
+                <p>-1° | -2°</p>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="icon-little">
+                <i class="fas fa-cloud"></i>
+                <h6>Wednesday</h6>
+                <p>2° | 0°</p>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-sm-center">
+            <div class="col-sm-auto" id="date-and-time">
+              <h3>Friday 10/12/2021 11:18</h3>
+            </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <footer><a href="https://github.com/Brunsvigeren/weather-app" target="blank">Open-source code</a> by Stine Braunschweig Andersen
+    </footer>
+    <script src="src/index.js"></script>
+  </body>
+</html>
