@@ -89,39 +89,29 @@
   text-transform: capitalize;
 }
 
-.temp-scale p {
-  color: rgb(109, 105, 114);
+.units {
   font-size: 40px;
+  cursor: default;
 }
 
-#c {
-  color: rgb(109, 105, 114);
-  cursor: default;
-  transition: 150ms ease-in-out;
+a:link {
   text-decoration: none;
-  font-size: 40px;
-}
-
-#f {
   cursor: default;
-  transition: 150ms ease-in-out;
-  text-decoration: none;
-  color: rgb(109, 105, 114);
-  font-size: 40px;
 }
 
-#c:hover {
+a:hover {
   font-weight: bold;
-  cursor: default;
-}
-
-#f:hover {
-  font-weight: bold;
-  cursor: default;
 }
 
 .active {
   color: rgba(198, 49, 218, 0.6);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.active:hover {
+  color: rgba(198, 49, 218, 0.6);
+  cursor: default;
 }
 
 .icon-little {
