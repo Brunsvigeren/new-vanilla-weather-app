@@ -120,7 +120,7 @@
   cursor: default;
 }
 
-.temp-scale .active {
+.active {
   color: rgba(198, 49, 218, 0.6);
 }
 

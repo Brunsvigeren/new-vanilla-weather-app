@@ -130,4 +130,6 @@ function onLoadCurrentLocation() {
   navigator.geolocation.getCurrentPosition(getCurrentPosition);
 }
 
-window.onload = onLoadCurrentLocation();
+search("Copenhagen");
+
+/*window.onload = onLoadCurrentLocation();*/
