@@ -146,3 +146,12 @@ footer {
   margin-bottom: 30px;
   text-align: center;
 }
+
+#source-code {
+  text-decoration: underline;
+}
+
+#source-code:hover {
+  cursor: pointer;
+  font-weight: normal;
+}
