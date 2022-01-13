@@ -59,6 +59,7 @@
 }
 
 #date-and-time {
+  font-family: Arial, Helvetica, sans-serif;
   margin-top: 10px;
   font-size: 15px;
   color: rgba(180, 155, 184, 0.8);
@@ -91,6 +92,7 @@
 }
 
 .units {
+  font-family: "Raleway", sans-serif;
   font-size: 40px;
   cursor: default;
 }
@@ -113,10 +115,6 @@ a:hover {
 .active:hover {
   color: rgba(198, 49, 218, 0.6);
   cursor: default;
-}
-
-.fas {
-  font-size: 30px;
 }
 
 .forecast-temperatures .forecast-max-temp .forecast-min-temp {
@@ -142,9 +140,11 @@ a:hover {
 
 #wind-and-humidity {
   color: rgba(198, 49, 218, 0.6);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #forecast {
+  font-family: Arial, Helvetica, sans-serif;
   border-top: 1px dotted rgba(198, 49, 218, 0.6);
   padding-top: 20px;
 }
