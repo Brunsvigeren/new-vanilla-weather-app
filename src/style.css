@@ -59,6 +59,7 @@
 }
 
 #date-and-time {
+  margin-top: 10px;
   font-size: 15px;
   color: rgba(180, 155, 184, 0.8);
 }
@@ -114,16 +115,23 @@ a:hover {
   cursor: default;
 }
 
-.icon-little {
-  font-size: 35px;
-  color: rgba(198, 49, 218, 0.6);
-  transition: 200ms ease-in-out;
+.fas {
+  font-size: 30px;
 }
 
-.icon-little p {
+.forecast-temperatures .forecast-max-temp .forecast-min-temp {
   font-size: 18px;
+  color: rgba(198, 49, 218);
   font-weight: 500;
-  color: rgba(198, 49, 218, 0.8);
+}
+
+.forecast-min-temp {
+  color: rgb(220, 184, 226);
+}
+
+.icon-little {
+  color: rgba(198, 49, 218, 0.6);
+  transition: 200ms ease-in-out;
 }
 
 .icon-little:hover {

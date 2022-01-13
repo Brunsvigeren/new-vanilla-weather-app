@@ -37,6 +37,32 @@ function formatDate(timestamp) {
   return `Last updated: ${day}, ${month} ${dateDate}th | ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#weather-forecast");
+
+  let forecastHTML = `<div class="row" id="forecast">`;
+  let days = ["Thursday", "Friday", "Saturday", "Sunday", "Monday"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      ` 
+            <div class="col-sm">
+              <div class="icon-little">
+                <i class="fas fa-sun"></i>
+                <h6 class="day">${day}</h6>
+                <div class="forecast-temperatures">
+                  <span class="forecast-max-temp">1°</span> 
+                  <span class="forecast-min-temp">0°</span>
+                </div>
+              </div>
+            </div>
+          `;
+  });
+
+  forcastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function showTemperature(response) {
   let temperatureElement = document.querySelector("#temp");
   let cityElement = document.querySelector("#current-city");
@@ -135,5 +161,7 @@ function onLoadCurrentLocation() {
 }
 
 search("Copenhagen");
+
+displayForecast();
 
 /*window.onload = onLoadCurrentLocation();*/
